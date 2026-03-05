@@ -1,0 +1,5 @@
+# Disable gateway JWT verification for admin-update-user.
+# The gateway rejects valid ES256 JWTs with "Invalid JWT" (known Supabase issue).
+# We validate the JWT and check admin status manually inside the function.
+[functions.admin-update-user]
+verify_jwt = false
