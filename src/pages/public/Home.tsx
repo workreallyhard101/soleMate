@@ -12,10 +12,10 @@ const steps = [
 ];
 
 const rules = [
-  { icon: CheckCircle, color: 'text-teal-400',  bg: 'bg-teal-500/10 border-teal-500/20',   text: 'Your steps only — own tracked activity.' },
-  { icon: XCircle,     color: 'text-red-400',   bg: 'bg-red-500/10 border-red-500/20',     text: 'No manipulation — fake steps = disqualification.' },
-  { icon: Upload,      color: 'text-teal-400',  bg: 'bg-teal-500/10 border-teal-500/20',   text: 'Valid proof required — clear screenshot or PDF.' },
-  { icon: Clock,       color: 'text-amber-400', bg: 'bg-amber-500/10 border-amber-500/20', text: 'Deadline: Sunday 10 PM CT — no exceptions.' },
+  { icon: CheckCircle, color: 'text-teal-400',  bg: 'bg-teal-500/10 border-teal-500/20',   text: 'Your steps only - own tracked activity.' },
+  { icon: XCircle,     color: 'text-red-400',   bg: 'bg-red-500/10 border-red-500/20',     text: 'No manipulation - fake steps = disqualification.' },
+  { icon: Upload,      color: 'text-teal-400',  bg: 'bg-teal-500/10 border-teal-500/20',   text: 'Valid proof required - clear screenshot or PDF.' },
+  { icon: Clock,       color: 'text-amber-400', bg: 'bg-amber-500/10 border-amber-500/20', text: 'Deadline: Sunday 10 PM CT - no exceptions.' },
   { icon: Trophy,      color: 'text-amber-400', bg: 'bg-amber-500/10 border-amber-500/20', text: 'Highest approved steps wins. Admin is final.' },
 ];
 
