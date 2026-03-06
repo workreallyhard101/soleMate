@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { AuthProvider } from './contexts/AuthContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { AdminModeProvider } from './contexts/AdminModeContext';
@@ -71,6 +72,7 @@ export default function App() {
           <AppInner />
         </ThemeProvider>
       </AuthProvider>
+      <Analytics />
     </BrowserRouter>
   );
 }
