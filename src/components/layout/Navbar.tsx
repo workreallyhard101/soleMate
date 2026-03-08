@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Footprints, Menu, X, LogOut, User, Shield, ChevronDown, Palette, Trash2, AlertTriangle } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import { useTheme, THEMES } from '../../contexts/ThemeContext';
@@ -144,7 +144,6 @@ export function Navbar() {
   const { user, profile, signOut, isAdmin } = useAuth();
   const { theme, setTheme } = useTheme();
   const { isAdminMode } = useAdminMode();
-  const navigate = useNavigate();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
@@ -154,7 +153,7 @@ export function Navbar() {
 
   const handleSignOut = async () => {
     await signOut();
-    navigate('/');
+    window.location.replace('/');
   };
 
   const handleDeleteAccount = async () => {
@@ -163,7 +162,7 @@ export function Navbar() {
     setDeleteLoading(false);
     setShowDeleteModal(false);
     await signOut();
-    navigate('/');
+    window.location.replace('/');
   };
 
   const isActive = (path: string) => {

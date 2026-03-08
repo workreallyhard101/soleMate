@@ -229,6 +229,7 @@ export function ProfilePage() {
                 value={newPassword}
                 onChange={(e) => { setNewPassword(e.target.value); setPasswordError(''); }}
                 placeholder="At least 8 characters"
+                showPasswordToggle
               />
 
               <Input
@@ -237,6 +238,7 @@ export function ProfilePage() {
                 value={confirmPassword}
                 onChange={(e) => { setConfirmPassword(e.target.value); setPasswordError(''); }}
                 placeholder="Repeat new password"
+                showPasswordToggle
               />
 
               <Button onClick={handleChangePassword} loading={changingPassword} variant="secondary">
